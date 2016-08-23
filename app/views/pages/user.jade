@@ -1,0 +1,42 @@
+extends ../layout
+
+block content
+	.container.user-detail
+		.user-tit 
+			h1 个人中心
+		.u-main
+			.u-nav
+				ul
+					li.u-active(onclick="userAjax(zl)")
+						i.u-nav-icon1
+						span 我的资料
+					li(onclick="userAjax(zl)")
+						i.u-nav-icon2
+						span 我的关注
+					li(onclick="userAjax(zl)")
+						i.u-nav-icon3
+						span 房间管理
+			.u-mainbody
+				ul.u-detail-nav
+					li.u-main-active 基本资料
+						.arrow
+					li 修改头像
+						.arrow
+					li 修改密码
+						.arrow
+					li 修改昵称
+						.arrow
+					li 实名认证
+						.arrow
+					li 修改手机
+						.arrow
+				.u-main-detail
+					.u-info
+						.u-pic
+							img(src="/images/userphotos/#{user.picture}")
+						.u-der
+							.u-name
+								span.u-name-name #{user.name}
+								span.u-fixname(onclick="userAjax(fixname)") 修改昵称
+							.u-level
+							.u-vip

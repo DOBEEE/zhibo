@@ -1,0 +1,341 @@
+/*------------------------------------*\
+    $CONTENTS
+\*------------------------------------*/
+/**
+ * CONTENTS............You’re reading it!
+ * RESET...............Set our reset defaults
+ * FONT-FACE...........Import brand font files
+ * INDEX...............For the index.html
+ * USER................For the user.html
+ */
+
+/*------------------------------------*\
+	$RESET
+\*------------------------------------*/
+html,body{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	background-color: #f2f2f2;
+}
+*{
+	box-sizing: border-box;
+}
+body{
+	font-size: 12px;
+	font-family: "微软雅黑";
+}
+ul,li{
+	margin:0;
+	padding: 0;
+	list-style: none;
+}
+a:hover{
+	text-decoration:none;
+}
+.main{
+	margin-top:50px;
+}
+
+/*------------------------------------*\
+	$INDEX
+\*------------------------------------*/
+
+/*nav*/
+.navbar{
+	border-bottom: 1px solid #d1d1d1;
+}
+/*loopimages*/
+#container{
+	position: relative;
+	width: 100%;
+	height: 520px;
+	overflow: hidden;
+	margin-bottom: 20px;
+}
+#s-list{
+	position: relative;
+	width: 100%;
+	height: 520px;
+	overflow: hidden;
+}
+#s-list ul{
+	position: relative;
+	width: 100%;
+	height: 520px;
+	
+}
+#s-list ul li{
+	position: absolute;
+	width: 100%;
+	height: 520px;
+	overflow: hidden;
+}
+#s-list ul li img{
+	position: absolute;
+	left:50%;
+	margin-left: -960px;
+	width: 1920px;
+	height: auto;
+}
+#s-tab{
+	position: absolute;
+	left:50%;
+	bottom: 0;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%) ;
+	-ms-transform: translateX(-50%) ;
+	transform: translateX(-50%);
+	z-index: 99;
+	white-space:nowrap;
+}
+#s-tab ul{
+	width: 1210px;
+	overflow: hidden;
+}
+#s-tab ul li{
+	position: relative;
+	top: 31px;
+	width: 200px;
+	height: 100px;
+	margin-right: 2px;
+	overflow: hidden;
+	display: inline-block;
+	border: 2px solid #ccc;
+	color: #737373;
+	transition: all 0.4s;
+	vertical-align: bottom;
+}
+#s-tab ul .cur{
+	top:0px;
+	color: #fff;
+	border: 2px solid #fe8e16;
+}
+#s-tab ul li .text{
+	position: absolute;
+	color: inherit;
+	width: 100%;
+	top:0;
+	text-align: center;
+	line-height: 20px;
+}
+#s-tab ul li .text:before{
+	content: '';
+	position: absolute;
+	top:0;
+	left: 0;
+	height: 20px;
+	width: 100%;
+	background-color: #000;
+	opacity: 0.5;
+
+}
+#s-tab ul li .text p{
+	position: absolute;
+	width: 100%;
+	margin:0;
+	padding: 0;
+	z-index: 99;
+}
+#s-tab ul li img{
+	width: 100%;
+	height: auto;
+}
+.indexpage{
+	width: 1210px;
+	padding: 0;
+}
+.now{
+	width: 1210px;
+	margin-top: 50px;
+	overflow: hidden;
+	white-space:nowrap;
+	/*text-align:justify;*/
+}
+.now li{
+	padding: 0;
+	width: 289px;
+	display: inline-block;
+	margin-right:15px;
+	margin-bottom:15px;
+	padding-left:0;
+	background-color: #fff;
+}
+.now li>a .img-box{
+	height: 163px;
+	overflow: hidden;
+}
+.now li>a .zhibo-des{
+	height: 60px;
+	font-size: 14px;
+	color: black;
+	overflow: hidden;
+	padding: 10px;
+}
+.now li>a .zhibo-des .zhibo-tit{
+	margin-bottom:5px;
+}
+.now li>a .zhibo-des .zhibo-tit:hover{
+	color: blue;
+}
+.now li>a .zhibo-des .zhibo-tit .sort{
+	float: right;
+	font-size: 12px;
+	color: #ccc;
+}
+.now li>a .zhibo-des p{
+	font-size: 12px;
+	color: #ccc;
+}
+.now li>a .zhibo-des p .zx-num{
+	float: right;
+}
+.now .index-title{
+	border-bottom:2px solid #d6d6d6;  
+	margin-bottom: 20px;
+	line-height: 30px;
+}
+.now .index-title .left-side{
+	text-align: left;
+	font-size: 30px;
+	color: black;
+}
+.now .index-title .right-side{
+	float: right;
+	font-size: 16px;
+}
+/*footer*/
+footer{
+	margin-top: 60px;
+	background: url(../images/footer-bg.png) no-repeat;
+	/*background-color: #000;*/
+	color: #fff;
+	height: 100px;
+	text-align: center;
+	line-height: 20px;
+}
+footer .outlink{
+	padding-top: 20px;
+}
+
+/*------------------------------------*\
+	$USER
+\*------------------------------------*/
+.user-detail{
+	width: 1000px;
+}
+.user-tit{
+	width: 100%;
+	height: 50px;
+	border-bottom:2px solid #ebebeb; 
+	margin-bottom:20px;
+	margin-top:20px;
+}
+.user-tit h1{
+	margin:0;
+	width: 167px;
+	height: 50px;
+	font-size: 30px;
+	color: #000;
+	border-bottom:2px solid #ff8f2b; 
+	text-align:center;
+	line-height: 1.3;
+}
+.u-main{
+	width: 100%;
+	display: block;
+}
+.u-main .u-nav{
+	width: 167px;
+	float: left;
+	margin-right: 50px;
+}
+.u-main .u-nav li{
+	width: 100%;
+	cursor: pointer;
+	/*height: 50px;*/
+	font-size: 16px;
+	text-align:center;
+	line-height: 50px;
+	border-bottom:1px solid #ebebeb;
+}
+.u-main .u-nav li:hover{
+	color: #ff8f2b;
+}
+.u-main .u-nav .u-active{
+	background-color: #ff8f2b;
+	color: #fff;
+	border: 0;
+}
+.u-main .u-nav .u-active:hover{
+	color: #fff;
+}
+.u-main .u-mainbody{
+	float: left;
+	width: 753px;
+	height: 800px;
+	/*background-color:#fff;*/
+}
+.u-detail-nav{
+	display: block;
+	height: 35px;
+	margin-bottom: 20px;
+}
+.u-main .u-mainbody li{
+	display: inline-block;
+	float: left;
+	margin-right: 5px;
+	width: 110px;
+	height: 35px;
+	line-height:35px; 
+	text-align: center;
+	font-size: 14px;
+	cursor: pointer;
+}
+.u-main .u-mainbody li:hover{
+	background-color:#3b9eeb;
+	color: #fff;
+}
+.u-main-active{
+	background-color:#3b9eeb;
+	color: #fff;
+}
+.u-main-detail{
+	width: 100%;
+	height: 700px;
+	background-color:#fff;
+	padding: 30px;
+}
+.u-info{
+	width: 489px;
+	height: 122px;
+}
+.u-info .u-pic{
+	height: 122px;
+	width: auto;
+	position: absolute;
+}
+.u-info .u-pic img{
+	height: 100%;
+}
+.u-info .u-der{
+	margin-left:150px;
+}
+.u-info .u-der .u-name-name{
+	font-size: 22px;
+}
+.u-info .u-der .u-fixname{
+	font-size: 12px;
+	color: #f60;
+	margin-left:50px;
+	cursor: pointer;
+}
+
+/*------------------------------------*\
+	$DETAIL
+\*------------------------------------*/
+
+#player_container{
+	position: absolute !important;
+	top: 50px;
+}

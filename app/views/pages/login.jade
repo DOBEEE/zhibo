@@ -1,0 +1,15 @@
+extends ../layout
+
+block content
+	.container
+		.row
+			.col-md-5
+				h1 #{title}
+				form(method="POST",action="/login")
+					.form-group
+						label(for="email") email
+						input(type="text" ,name="user[email]" ,class="form-control" ,id="email",placeholder="email")
+					.form-group
+						label(for="password") password
+						input(type="password" ,name="user[password]" ,class="form-control" ,id="password" ,placeholder="password")
+					button.btn.btn-default.btn-primary(type="submit") 提交
